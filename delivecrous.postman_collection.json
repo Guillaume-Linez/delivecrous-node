@@ -1,0 +1,287 @@
+{
+	"info": {
+		"_postman_id": "77f5266e-b57d-4658-838f-56d1d29edf74",
+		"name": "delivecrous",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23685267"
+	},
+	"item": [
+		{
+			"name": "post_dishe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:2000/plats?name=Yahourt au fruits&prix=2&alergene=lactose",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"plats"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Yahourt au fruits"
+						},
+						{
+							"key": "prix",
+							"value": "2"
+						},
+						{
+							"key": "alergene",
+							"value": "lactose"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_all_dishes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2000/plats",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"plats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_dishe_by_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2000/plats/63d68eaba4eb0e46f5b9331d",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"plats",
+						"63d68eaba4eb0e46f5b9331d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "del_dish",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:2000/plats/63d68eaba4eb0e46f5b9331d",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"plats",
+						"63d68eaba4eb0e46f5b9331d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post_user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:2000/user/?nom=Linez&prenom=Guillaume&id_user=1",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"user",
+						""
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "Linez"
+						},
+						{
+							"key": "prenom",
+							"value": "Guillaume"
+						},
+						{
+							"key": "id_user",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2000/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "del_user_by_id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2000/user/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"user",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post_cart_dish",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:2000/Cadie/63d68ec1a4eb0e46f5b9331f?quantite=15&id_user=1",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"Cadie",
+						"63d68ec1a4eb0e46f5b9331f"
+					],
+					"query": [
+						{
+							"key": "quantite",
+							"value": "15"
+						},
+						{
+							"key": "id_user",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_cart",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2000/Cadie/1",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"Cadie",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "del_cart_dish",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:2000/Cadie/63d690b2b486883885a8ff8d",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"Cadie",
+						"63d690b2b486883885a8ff8d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post_commande",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:2000/commande/?id_user=1&adresse=1 rue de paris",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"commande",
+						""
+					],
+					"query": [
+						{
+							"key": "id_user",
+							"value": "1"
+						},
+						{
+							"key": "adresse",
+							"value": "1 rue de paris"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "del_all_user_cart",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:2000/Cadie/deleteall/1",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"Cadie",
+						"deleteall",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
